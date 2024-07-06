@@ -175,3 +175,90 @@ a {
         width: 0;
     }
 }
+
+@media (max-width:1200px) {
+    .photo{
+        position: absolute;
+        top: 150px;
+        right: 200px;
+        border-radius: 50%;
+    }
+}
+@media (max-width:1125px) {
+    .photo{
+        position: absolute;
+        top: 150px;
+        right: 150px;
+        border-radius: 50%;
+    }
+}
+@media (max-width:1075px) {
+    .photo{
+        position: absolute;
+        top: 150px;
+        right: 125px;
+        border-radius: 50%;
+    }
+}
+@media (max-width:1024px) {
+    .photo{
+        position: absolute;
+        top: 150px;
+        right: 80px;
+        border-radius: 50%;
+    }
+}
+@media (max-width:912px) {
+    .photo{
+        position: absolute;
+        top: 450px;
+        right: 40%;
+        border-radius: 50%;
+    }
+}
+@media (max-width:540px) {
+    .photo{
+        position: absolute;
+        top: 400px;
+        right: 0px;
+        border-radius: 50%;
+    }
+}
+@media (max-width:430px) {
+    .photo{
+        position: absolute;
+        top: 450px;
+        right: 0px;
+        border-radius: 50%;
+    }
+    .head nav {
+        display: grid;
+        font-size: 20px;
+        grid-template-columns: 1fr  1fr 1fr 1fr;
+        column-gap: 30px;
+        margin-left: 100px;
+    }
+}
+@media (max-width:375px) {
+    .photo{
+        position: absolute;
+        top: 450px;
+        right: 0px;
+        border-radius: 50%;
+    }
+    .head nav {
+        display: grid;
+        font-size: 20px;
+        grid-template-columns: 1fr  1fr 1fr 1fr;
+        column-gap: 30px;
+        margin-left: 100px;
+    }
+    .socialmedia{
+        position: absolute;
+        height: 40px;
+        bottom: -100px;
+        left: 130px;
+        display: flex;
+        gap: 20px;
+    }
+}
