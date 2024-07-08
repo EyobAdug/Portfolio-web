@@ -215,6 +215,14 @@ a {
         right: 40%;
         border-radius: 50%;
     }
+    .socialmedia{
+        position: absolute;
+        height: 40px;
+        bottom: -90px;
+        left: 130px;
+        display: flex;
+        gap: 20px;
+    }
 }
 @media (max-width:540px) {
     .photo{
