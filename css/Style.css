@@ -58,11 +58,14 @@ a {
 .head nav a:hover,
 .head nav a.active{
     color: aqua;
+    text-decoration: underline ;
 }
-
+.content{
+    display: flex;
+    padding: 80px 80px;
+}
 .home-content{
-    margin: 80px 0px 0px 100px;
-    width: 600px;
+    flex: 2;
     color: lightblue;
     display: flex;
     flex-direction: column;
@@ -105,10 +108,7 @@ a {
     animation-delay: 1.5s;
 }
 .socialmedia{
-    position: absolute;
     height: 40px;
-    bottom: 50px;
-    left: 130px;
     display: flex;
     gap: 20px;
 }
@@ -140,10 +140,10 @@ a {
     transition: 1s;
 }
 .photo{
-    position: absolute;
-    top: 150px;
-    right: 250px;
-    border-radius: 50%;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
 }
 .photo img{
     height: 250px;
@@ -176,97 +176,20 @@ a {
     }
 }
 
-@media (max-width:1200px) {
-    .photo{
-        position: absolute;
-        top: 150px;
-        right: 200px;
-        border-radius: 50%;
-    }
-}
-@media (max-width:1125px) {
-    .photo{
-        position: absolute;
-        top: 150px;
-        right: 150px;
-        border-radius: 50%;
-    }
-}
-@media (max-width:1075px) {
-    .photo{
-        position: absolute;
-        top: 150px;
-        right: 125px;
-        border-radius: 50%;
-    }
-}
-@media (max-width:1024px) {
-    .photo{
-        position: absolute;
-        top: 150px;
-        right: 80px;
-        border-radius: 50%;
-    }
-}
-@media (max-width:912px) {
-    .photo{
-        position: absolute;
-        top: 450px;
-        right: 40%;
-        border-radius: 50%;
-    }
-    .socialmedia{
-        position: absolute;
-        height: 40px;
-        bottom: -150px;
-        left: 130px;
+@media (max-width:768px) {
+    .content{
         display: flex;
-        gap: 20px;
-    }
-}
-@media (max-width:540px) {
-    .photo{
-        position: absolute;
-        top: 400px;
-        right: 0px;
-        border-radius: 50%;
-    }
-}
-@media (max-width:430px) {
-    .photo{
-        position: absolute;
-        top: 450px;
-        right: 0px;
-        border-radius: 50%;
-    }
-    .head nav {
-        display: grid;
-        font-size: 20px;
-        grid-template-columns: 1fr  1fr 1fr 1fr;
-        column-gap: 30px;
-        margin-left: 100px;
-    }
-}
-@media (max-width:375px) {
-    .photo{
-        position: absolute;
-        top: 450px;
-        right: 0px;
-        border-radius: 50%;
-    }
-    .head nav {
-        display: grid;
-        font-size: 20px;
-        grid-template-columns: 1fr  1fr 1fr 1fr;
-        column-gap: 30px;
-        margin-left: 100px;
-    }
-    .socialmedia{
-        position: absolute;
-        height: 40px;
-        bottom: -150px;
-        left: 130px;
+        flex-direction: column-reverse;
+        padding: 80px 30px;
+        width: auto;
+    } 
+    .home-content{
+        color: lightblue;
         display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
         gap: 20px;
+        padding: 30px;
+        border-radius: 10px;
     }
 }
