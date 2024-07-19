@@ -186,7 +186,7 @@ a {
 @media (max-width:768px) {
     .content{
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         padding: 80px 30px;
     } 
     .home-content{
@@ -232,7 +232,7 @@ a {
 @media (max-width:440px) {
     .content{
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         padding: 80px 30px;
         margin: 0px;
     } 
