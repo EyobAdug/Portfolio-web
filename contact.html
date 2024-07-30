@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eyob's Portfolio</title>
+    <link rel="stylesheet" href="css/contact.css" />
+    <script src="js/Script.js" defer></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="head">
+        <a class="logo" href="Portifolioweb.html">Eyob.</a>
+        <nav id="navbar">
+          <a href="#" id="close"><i class="far fa-times"></i></a>
+          <a href="Portifolioweb.html">Home</a>
+          <a href="Resumepage.html">Resume</a>
+          <a href="work.html">Work</a>
+          <a class="active" href="contact.html">Contact</a>
+        </nav>
+        <div id="mobile">
+          <i id="bar" class="fas fa-outdent"></i>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="contact-form">
+        <div class="info">
+          <h1>Contact Me</h1>
+          <h3>
+            <i class="fa-solid fa-envelope"></i> Email: eyobadgnaw9@gmail.com
+          </h3>
+          <h3>
+            <i class="fa-solid fa-phone"></i> Phone number: (+251) 98 475 6482
+          </h3>
+        </div>
+
+        <form action="https://formspree.io/f/mjkbwgny" method="post">
+          <fieldset>
+            <legend>Let's work together</legend>
+            <input
+              type="text"
+              placeholder="Full name"
+              name="Name"
+              class="Name"
+              required
+            />
+            <input
+              type="text"
+              placeholder="Email"
+              name="Email"
+              class="Name"
+              required
+            />
+            <input
+              type="text"
+              placeholder="Phone number"
+              name="Phone number"
+              class="Name"
+              required
+            />
+            <input
+              type="text"
+              placeholder="Country"
+              name="Country"
+              class="Name"
+              required
+            />
+            <input
+              type="text"
+              class="Name"
+              name="Service"
+              list="Service"
+              required
+            />
+            <datalist id="Service">
+              <option>Frontend Developer</option>
+              <option>Backend Developer</option>
+            </datalist>
+
+            <textarea name="Message" placeholder="Message" required></textarea>
+            <button type="submits">Submit</button>
+          </fieldset>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
